@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        function verificarIdade(n1){
+            var idade = n1;
+            if(idade < 18){
+                console.log('Você é adolescente');
+            }else if(idade > 17){
+                console.log('Você é um adulto');
+            }else if(idade > 60){
+                console.log('Você já é um idoso!');
+            };
+        };
+
+        verificarIdade(60)
+
+        let arr = [5, 12, 7, 20, 3, 18];
+        var obj = {
+            soma: 0,
+            media: 0,
+        };
+
+        for(var x = 0; x < arr.length; x++){
+            console.log(arr[x]);
+            obj.media+=arr[x];
+            if(arr[x] > 10){
+                obj.soma+=arr[x];
+            };
+        }
+        console.log('A soma dos números maiores que 10: '+obj.soma);
+        console.log('A média: '+obj.media/arr.length);
+
+        var pessoa = {
+            nome: 'Tiago',
+            idade: 21,
+                apresentar(){
+                    console.log('Olá! meu nome é '+this.nome+' e eu tenho '+this.idade+' anos.');
+                },
+        };
+
+        pessoa.apresentar();
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Lista de tarefas</h1>
+
+   <input type="text" id="texto">
+   <button id="btn">Adicionar</button>
+    <ul id="lista"></ul>
+
+
+
+
+    <script>
+        var texto = document.querySelector('#texto');
+        var btn = document.querySelector('#btn');
+        var lista = document.querySelector('#lista');
+
+        btn.addEventListener('click', function() {
+            var li = document.createElement('li');
+                li.textContent = texto.value;
+                lista.appendChild(li);
+                texto.value = '';
+        });
+
+        texto.addEventListener('keydown', function() {
+            if(event.key == 'Enter'){
+                var li = document.createElement('li');
+                li.textContent = texto.value;
+                lista.appendChild(li);
+                texto.value = '';
+            };
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>
