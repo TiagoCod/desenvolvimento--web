@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 500px;
+            overflow: auto;
+            position: relative;
+        }
+        thead{
+            background-color: darkorange;
+            color: white;
+            font-weight: bold;
+            position: sticky;
+            top: -1px;
+        }
+        thead > th{
+            
+            
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgba(255, 140, 0, 0.568);
+        }
+        th{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        td{
+            border: 2px solid black;
+            padding: 20px;
+        }
+        .container{
+            padding: 200px;
+            background-color: black;
+            background-image: url('../modulo-1/desafio-1/imagens/camera.avif');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            max-width: 100%;
+            min-width: 42%;
+        }
+        .container p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            font-size: 1.5em;
+            text-align: justify;
+            font-weight: lighter;
+            background-color: rgba(0, 0, 0, 0.562);
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+
+        }
+    </style>
+
+</head>
+<body>
+        <main>
+            <h1>Trabalhando com tabelas</h1>
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <caption>Produtos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notebook</td>
+                        <td>2</td>
+                        <td>R$ 2000</td>
+                    </tr>
+                    <tr>
+                        <td>Tablet</td>
+                        <td>3</td>
+                        <td>R$ 3000</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>1</td>
+                        <td>R$ 240</td>
+                    </tr>
+                    <tr>
+                        <td>Cadeira</td>
+                        <td>1</td>
+                        <td>R$ 1200</td>
+                    </tr>
+                    <tr>
+                        <td>Geladeira</td>
+                        <td>4</td>
+                        <td>R$ 4000</td>
+                    </tr>
+                    <tr>
+                        <td>Fogão</td>
+                        <td>2</td>
+                        <td>R$ 800</td>
+                    </tr>
+                    <tr>
+                        <td>Liquidificador</td>
+                        <td>5</td>
+                        <td>R$ 1000</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa</td>
+                        <td>2</td>
+                        <td>R$ 800</td>
+                    </tr>
+                    <tr>
+                        <td>Material Escolar</td>
+                        <td>12</td>
+                        <td>R$ 120</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>45</td>
+                        <td>R$ 560</td>
+                    </tr>
+                    <tr>
+                        <td>Fone de ouvido</td>
+                        <td>11</td>
+                        <td>R$ 995</td>
+                    </tr>
+                    <tr>
+                        <td>Air Frayer</td>
+                        <td>12</td>
+                        <td>R$ 2040</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" scope="row">Total</th>
+                        <td>R$ 5240</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+            
+            <section class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti mollitia, et distinctio perferendis provident? Iste nobis accusantium cumque. Distinctio vero sit consequuntur pariatur inventore voluptatum ratione quos modi provident!</p>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate atque fugiat nam saepe doloremque provident aliquam facere ab aperiam eos accusantium ipsa, vel corporis velit, earum quia. Facere, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugit asperiores, delectus enim aspernatur cumque distinctio voluptatum deserunt, soluta officia, explicabo laboriosam veniam eligendi perferendis! Nesciunt ipsam nulla neque velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eos hic quae, esse mollitia labore commodi tenetur laboriosam ipsa fugiat deleniti! Magni nobis alias soluta, optio numquam quasi. Eligendi!</p>
+        </main>
+
+        
+        
+        
+</body>
+</html>
